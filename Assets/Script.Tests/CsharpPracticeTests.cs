@@ -27,4 +27,11 @@ public class CsharpPracticeTests
 
         Assert.AreEqual(4 , result);
     }
+    
+    [Test(Description = "取得語言本地化文字")]
+    [TestCase(key :"Apple" ,   expectedText :"蘋果")]
+    [TestCase(key :"Banana" ,  expectedText :"香蕉")]
+    
+    public void GetLocalization(string key , string expectedText)
+    
 }
